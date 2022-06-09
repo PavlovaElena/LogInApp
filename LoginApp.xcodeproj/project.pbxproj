@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		DB2CE43E2843EC2C0082F562 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2CE43D2843EC2C0082F562 /* AppDelegate.swift */; };
-		DB2CE4402843EC2C0082F562 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2CE43F2843EC2C0082F562 /* SceneDelegate.swift */; };
 		DB2CE4422843EC2C0082F562 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2CE4412843EC2C0082F562 /* LoginViewController.swift */; };
 		DB2CE4452843EC2C0082F562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2CE4432843EC2C0082F562 /* Main.storyboard */; };
 		DB2CE4472843EC2F0082F562 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2CE4462843EC2F0082F562 /* Assets.xcassets */; };
 		DB2CE44A2843EC2F0082F562 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2CE4482843EC2F0082F562 /* LaunchScreen.storyboard */; };
 		DB2CE452284683740082F562 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2CE451284683740082F562 /* WelcomeViewController.swift */; };
+		DB3461402851E35F00E28951 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB34613F2851E35F00E28951 /* SceneDelegate.swift */; };
 		DB7450F3284E7711002D45A7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7450F2284E7711002D45A7 /* User.swift */; };
 		DB9532A32850A72D00D776BE /* WishBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9532A22850A72D00D776BE /* WishBoardViewController.swift */; };
 		DB9532A52850A76A00D776BE /* WishDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9532A42850A76A00D776BE /* WishDescriptionViewController.swift */; };
@@ -23,13 +23,13 @@
 /* Begin PBXFileReference section */
 		DB2CE43A2843EC2C0082F562 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2CE43D2843EC2C0082F562 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB2CE43F2843EC2C0082F562 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DB2CE4412843EC2C0082F562 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DB2CE4442843EC2C0082F562 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB2CE4462843EC2F0082F562 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB2CE4492843EC2F0082F562 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB2CE44B2843EC2F0082F562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB2CE451284683740082F562 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		DB34613F2851E35F00E28951 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DB7450F2284E7711002D45A7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DB9532A22850A72D00D776BE /* WishBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishBoardViewController.swift; sourceTree = "<group>"; };
 		DB9532A42850A76A00D776BE /* WishDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishDescriptionViewController.swift; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				DB2CE43D2843EC2C0082F562 /* AppDelegate.swift */,
-				DB2CE43F2843EC2C0082F562 /* SceneDelegate.swift */,
+				DB34613F2851E35F00E28951 /* SceneDelegate.swift */,
 				DB2CE44B2843EC2F0082F562 /* Info.plist */,
 			);
 			path = App;
@@ -198,9 +198,9 @@
 				DB9532A72850A8A100D776BE /* AboutMeViewController.swift in Sources */,
 				DB2CE4422843EC2C0082F562 /* LoginViewController.swift in Sources */,
 				DB2CE43E2843EC2C0082F562 /* AppDelegate.swift in Sources */,
-				DB2CE4402843EC2C0082F562 /* SceneDelegate.swift in Sources */,
 				DB9532A32850A72D00D776BE /* WishBoardViewController.swift in Sources */,
 				DB2CE452284683740082F562 /* WelcomeViewController.swift in Sources */,
+				DB3461402851E35F00E28951 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +356,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,6 +386,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
