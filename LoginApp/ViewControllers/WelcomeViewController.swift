@@ -41,10 +41,20 @@ class WelcomeViewController: UIViewController {
         setGradient(topColor: colorOne, centerColor: colorTwo, bottomColor: colorThree)
     }
     
+    override func viewDidLayoutSubviews() {
+        guard let layers = view.layer.sublayers else { return }
+        layers.forEach {
+            if let layer = $0 as? CAGradientLayer {
+                layer.frame = view.bounds
+            }
+        }
+    }
+    
     private func setGradient(topColor: UIColor, centerColor: UIColor, bottomColor: UIColor) {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds
         gradientLayer.colors = [topColor.cgColor, centerColor.cgColor, bottomColor.cgColor]
         view.layer.insertSublayer(gradientLayer, at: 0)
+        
     }
 }

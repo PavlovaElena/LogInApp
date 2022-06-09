@@ -34,8 +34,8 @@ struct Person {
         Person(
             name: "Elena",
             surname: "Pavlova",
-            photo: "",
-            description: "Hi, there!",
+            photo: "aboutMe",
+            description: "I’m interested in IOS development. I’m currently learning Swift.",
             wishes: Wish.getWishBoard()
         )
     }
@@ -48,9 +48,9 @@ struct Wish {
     
     static func getWishBoard() -> [Wish] {
         [ Wish(title: "I want to work as an iOS developer", description: "An iOS developer is responsible for developing applications for mobile devices powered by Apple’s iOS operating system.", image: "mobile_dev"),
-          Wish(title: "I want to go to Burning Man", description: "Burning Man is an event focused on community, art, self-expression, and self-reliance held annually in the western United States. The name of the event comes from its culminating ceremony: the symbolic burning of a large wooden effigy, referred to as the Man, that occurs on the penultimate night of Burning Man.", image: "Burning_Man"),
+          Wish(title: "I want to go to Burning Man", description: "Burning Man is an event focused on community, art, self-expression, and self-reliance held annually in the western United States. The name of the event comes from its culminating ceremony: the symbolic burning of a large wooden effigy, referred to as the Man.", image: "Burning_Man"),
           Wish(title: "I want to watch the football match at Wembley Stadium", description: "Wembley Stadium is owned by the governing body of English football, the Football Association. With 90,000 seats, it is the largest stadium in the UK and the second-largest stadium in Europe.", image: "wembley"),
-          Wish(title: "I want to go on safari in Africa", description: "A safari is an overland journey to observe wild animals", image: "safari"),
+          Wish(title: "I want to go on safari in Africa", description: "A safari is an overland journey to observe wild animals.", image: "safari"),
           Wish(title: "I want to visit the Louvre", description: "The Louvre museum is located inside the Louvre Palace, in the center of Paris, adjacent to the Tuileries Gardens. The Louvre is the world's most-visited museum. It is the home of some of the best-known works of art, including the Mona Lisa and the Venus de Milo.", image: "Louvre")
         ]
     }
